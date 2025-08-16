@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Online | Detalles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="container header__inner">
+      <a class="logo" href="index.html">TN</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="portfolio.html">Portafolio</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h1>Tienda Online (Front-End)</h1>
+          <p class="muted">Rol: Front-End · Tiempo: 2–4 semanas · Stack: HTML, CSS (Grid/Flex), JS</p>
+          <p>
+            Tienda web con catálogo filtrable (categoría, precio y búsqueda), carrito de compras con
+            persistencia en <em>localStorage</em>, y maquetación semántica accesible. El foco estuvo en
+            la experiencia de usuario: navegación clara, tarjetas de producto con “añadir al carrito”,
+            y feedback visual en acciones. La interfaz es responsiva usando CSS Grid y Flexbox, con
+            <em>lazy loading</em> de imágenes para optimizar rendimiento. Se alcanzó un puntaje superior
+            a 90 en Lighthouse (Performance/Best Practices/SEO).
+          </p>
+          <ul>
+            <li>Catálogo con filtros dinámicos y ordenamiento.</li>
+            <li>Carrito persistente y resumen de compra.</li>
+            <li>Diseño responsive y accesible (etiquetas ARIA, semántica).</li>
+          </ul>
+
+          <div class="cta" style="margin-top:16px;">
+            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver demo</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            <a class="btn" href="portfolio.html">← Volver</a>
+          </div>
+        </div>
+        <aside class="card">
+          <img src="assets/proyecto1.jpg" alt="Captura Tienda Online">
+          <!-- (Opcional) Reemplaza por un iframe de video si tienes demo en YouTube -->
+          <!-- <iframe width="100%" height="280" src="https://www.youtube.com/embed/ID" title="Demo Tienda" allowfullscreen></iframe> -->
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Tu Nombre.</p>
+      <a href="#" id="toTop" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

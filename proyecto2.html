@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API REST | Detalles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="container header__inner">
+      <a class="logo" href="index.html">TN</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="portfolio.html">Portafolio</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h1>API REST de Productos y Pedidos</h1>
+          <p class="muted">Rol: Back-End · Tiempo: 2–3 semanas · Stack: Node.js, Express, MongoDB/SQL</p>
+          <p>
+            API REST para gestionar productos, usuarios y pedidos, con endpoints CRUD, validación de
+            datos y autenticación (básica/JWT). Incluye paginación, filtros y documentación técnica
+            (OpenAPI/Swagger) para facilitar la integración. Se aplicaron middlewares para manejo de
+            errores y protección de rutas, además de pruebas con Postman. La arquitectura prioriza la
+            mantenibilidad y separación por capas (rutas, controladores, servicios, modelos).
+          </p>
+          <ul>
+            <li>CRUD de productos y pedidos con validaciones.</li>
+            <li>Autenticación y autorización por roles.</li>
+            <li>Documentación Swagger y colección Postman.</li>
+          </ul>
+
+          <div class="cta" style="margin-top:16px;">
+            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver documentación</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            <a class="btn" href="portfolio.html">← Volver</a>
+          </div>
+        </div>
+        <aside class="card">
+          <img src="assets/proyecto2.jpg" alt="Esquema API REST">
+          <!-- (Opcional) tabla o snippet con endpoints -->
+          <!-- <pre class="card"><code>GET /api/products?page=1&limit=10</code></pre> -->
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Tu Nombre.</p>
+      <a href="#" id="toTop" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

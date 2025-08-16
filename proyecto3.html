@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | Detalles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="container header__inner">
+      <a class="logo" href="index.html">TN</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="portfolio.html">Portafolio</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h1>Dashboard de Métricas</h1>
+          <p class="muted">Rol: Full-Stack · Tiempo: 2–3 semanas · Stack: HTML, CSS, JS (fetch)</p>
+          <p>
+            Panel para visualizar KPIs (ventas, usuarios, conversión) con filtros por fecha y
+            actualización dinámica de tarjetas y gráficas. Se optimizó la carga con <em>lazy loading</em>
+            y se priorizó accesibilidad (contraste, foco visible, roles ARIA). El diseño responsivo
+            permite usarlo en escritorio y móvil. Estructura pensada para integrar fuentes de datos vía
+            <code>fetch</code> o APIs existentes.
+          </p>
+          <ul>
+            <li>KPIs con cambio en tiempo real (simulado / API).</li>
+            <li>Filtros por rango de fecha y búsqueda.</li>
+            <li>Animaciones sutiles y diseño responsive.</li>
+          </ul>
+
+          <div class="cta" style="margin-top:16px;">
+            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver demo</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            <a class="btn" href="portfolio.html">← Volver</a>
+          </div>
+        </div>
+        <aside class="card">
+          <img src="assets/proyecto3.jpg" alt="Captura Dashboard de métricas">
+          <!-- (Opcional) inserta un gráfico con una imagen o librería si tu profe lo pide -->
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Tu Nombre.</p>
+      <a href="#" id="toTop" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Currículum | Tu Nombre</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- SEO -->
+  <meta name="description" content="Currículum y portafolio de Tu Nombre: educación, experiencia, habilidades, idiomas y contacto." />
+
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="Currículum | Tu Nombre" />
+  <meta property="og:description" content="Desarrollador(a) web con proyectos en Front-End y Back-End. Mira mi portafolio y contáctame." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header>
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">TN</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#idiomas">Idiomas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--primary" href="portfolio.html">Portafolio</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Presentación -->
+    <section id="inicio" class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h1>Tu Nombre</h1>
+          <p class="lead">
+            Desarrollador(a) web orientado(a) a resultados, con experiencia en
+            front-end y back-end. Me gusta construir interfaces limpias y
+            soluciones mantenibles.
+          </p>
+          <div class="badges">
+            <span class="badge">Disponible</span>
+            <span class="badge">Remoto / Híbrido</span>
+          </div>
+          <div class="cta">
+            <a class="btn btn--primary" href="portfolio.html">Ver Portafolio</a>
+            <a class="btn" href="#contacto">Contactar</a>
+          </div>
+        </div>
+        <aside class="card profile">
+          <img src="assets/perfil.jpg" alt="Foto de Tu Nombre" />
+          <ul class="profile__list">
+            <li><strong>Ubicación:</strong> Ciudad, País</li>
+            <li><strong>Email:</strong> tuemail@ejemplo.com</li>
+            <li><strong>GitHub:</strong> github.com/tuusuario</li>
+            <li><strong>LinkedIn:</strong> linkedin.com/in/tuusuario</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="section">
+      <div class="container">
+        <h2>Educación</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <h3>Ing. en Sistemas | Universidad X</h3>
+            <p class="muted">2022 – Actualidad</p>
+            <p>Cursos clave: Estructuras de Datos, Programación Web, BD, POO.</p>
+          </article>
+          <article class="timeline__item">
+            <h3>Técnico en Desarrollo Web | Instituto Y</h3>
+            <p class="muted">2020 – 2021</p>
+            <p>HTML, CSS, JavaScript, Git, despliegues básicos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia (académica/profesional) -->
+    <section id="experiencia" class="section alt">
+      <div class="container">
+        <h2>Experiencia</h2>
+        <div class="cards grid grid--3">
+          <article class="card">
+            <h3>Práctica Profesional · Empresa A</h3>
+            <p class="muted">2024 (3 meses)</p>
+            <ul>
+              <li>Implementé landing pages responsivas (HTML/CSS/JS).</li>
+              <li>Colaboré en un dashboard con gráficos.</li>
+              <li>Mejoré la accesibilidad (ARIA, semántica).</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Proyecto de Curso · API REST</h3>
+            <p class="muted">2023</p>
+            <ul>
+              <li>API REST con autenticación JWT.</li>
+              <li>CRUD para productos y pedidos.</li>
+              <li>Pruebas con Postman y documentación.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Freelance · Sitio para Pyme</h3>
+            <p class="muted">2022</p>
+            <ul>
+              <li>Catálogo y formulario de contacto funcional.</li>
+              <li>Optimización de carga (Lighthouse 90+).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="skill"><span>HTML5</span><progress max="100" value="90"></progress></div>
+          <div class="skill"><span>CSS3 / Flex / Grid</span><progress max="100" value="85"></progress></div>
+          <div class="skill"><span>JavaScript</span><progress max="100" value="80"></progress></div>
+          <div class="skill"><span>Git / GitHub</span><progress max="100" value="80"></progress></div>
+          <div class="skill"><span>Node.js</span><progress max="100" value="70"></progress></div>
+          <div class="skill"><span>SQL</span><progress max="100" value="65"></progress></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section id="idiomas" class="section alt">
+      <div class="container">
+        <h2>Idiomas</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Idioma</th>
+              <th>Comprensión</th>
+              <th>Conversación</th>
+              <th>Escritura</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Español</td>
+              <td>Avanzado</td>
+              <td>Avanzado</td>
+              <td>Avanzado</td>
+            </tr>
+            <tr>
+              <td>Inglés</td>
+              <td>B2</td>
+              <td>B2</td>
+              <td>B2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form id="contactForm" class="form" novalidate>
+          <div class="form__row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required minlength="2" placeholder="Tu nombre" />
+            <small class="error" data-for="nombre"></small>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="tucorreo@ejemplo.com" />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form__row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            <small class="error" data-for="mensaje"></small>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary">Enviar</button>
+            <p class="muted">Esto abrirá tu cliente de correo (mailto).</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Tu Nombre. Todos los derechos reservados.</p>
+      <a href="#inicio" id="toTop" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
