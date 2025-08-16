@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio | Tu Nombre</title>
+  <meta name="color-scheme" content="light dark" />
+  <title>Portafolio | Jesus Matarrita</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta name="description" content="Portafolio de proyectos de Tu Nombre. Selección de trabajos y prácticas con detalles, demo y código." />
-  <meta property="og:title" content="Portafolio | Tu Nombre" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta name="description" content="Portafolio de proyectos de Jesus Matarrita. Selección de trabajos con imagen y detalles." />
+  <meta property="og:title" content="Portafolio | Jesus Matarrita" />
   <meta property="og:description" content="Proyectos: Tienda Online, API REST, Dashboard de métricas." />
-  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:image" content="assets/og-image.png" />
   <meta property="og:type" content="website" />
 </head>
 <body>
   <header>
     <div class="container header__inner">
-      <a class="logo" href="index.html" aria-label="Ir al inicio">TN</a>
-      <nav class="nav" id="nav">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">JM</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html#inicio">Inicio</a></li>
           <li><a href="index.html#experiencia">Experiencia</a></li>
           <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="Cambiar tema" aria-pressed="false">🌓</button>
       <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
     </div>
   </header>
@@ -32,56 +35,49 @@
     <section class="section">
       <div class="container">
         <h1>Portafolio</h1>
-        <p class="muted">Una selección de proyectos (académicos y personales).</p>
+        <p class="muted">Una selección de proyectos (académicos y personales) con una imagen y descripción breve.</p>
 
         <div class="grid grid--3 portfolio">
           <!-- Proyecto 1 -->
           <article class="card project" tabindex="0">
-            <img src="assets/proyecto1.jpg" alt="Miniatura de Tienda Online: tarjetas de productos y carrito" />
+            <img src="assets/proyecto1.jpg" alt="Miniatura Tienda Online: tarjetas de productos y carrito" />
             <div class="project__body">
               <h3>Tienda Online (Front-End)</h3>
               <p>
                 E-commerce con catálogo filtrable, ordenamiento y carrito persistente en <em>localStorage</em>.
-                Maquetación semántica y diseño responsive con Grid/Flex. Performance optimizada.
+                Maquetación semántica y diseño responsive con Grid/Flex.
               </p>
               <div class="project__actions">
-                <a class="btn btn--primary" href="proyecto1.html">Más detalles</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+                <a class="btn" href="proyecto1.html">Más detalles</a>
               </div>
             </div>
           </article>
 
           <!-- Proyecto 2 -->
           <article class="card project" tabindex="0">
-            <img src="assets/proyecto2.jpg" alt="Miniatura de API REST: esquema de endpoints de productos y pedidos" />
+            <img src="assets/proyecto2.jpg" alt="Miniatura API REST: esquema de endpoints de productos y pedidos" />
             <div class="project__body">
               <h3>API REST de Productos y Pedidos</h3>
               <p>
-                Endpoints CRUD con validación y autenticación (básica/JWT). Documentación técnica
-                (Swagger/OpenAPI), paginación y filtros. Enfoque en mantenibilidad por capas.
+                Endpoints CRUD con validación y autenticación (básica/JWT). Documentación Swagger/OpenAPI
+                y paginación/filtros listos para integraciones.
               </p>
               <div class="project__actions">
-                <a class="btn btn--primary" href="proyecto2.html">Más detalles</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Doc/Demo</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+                <a class="btn" href="proyecto2.html">Más detalles</a>
               </div>
             </div>
           </article>
 
           <!-- Proyecto 3 -->
           <article class="card project" tabindex="0">
-            <img src="assets/proyecto3.jpg" alt="Miniatura de Dashboard: tarjetas KPI y gráficas" />
+            <img src="assets/proyecto3.jpg" alt="Miniatura Dashboard: tarjetas KPI y gráficas" />
             <div class="project__body">
               <h3>Dashboard de Métricas</h3>
               <p>
                 Panel con KPIs y filtros por rango de fechas. Carga perezosa, accesibilidad y diseño responsive.
-                Preparado para integrar datos reales vía <code>fetch</code>/APIs.
               </p>
               <div class="project__actions">
-                <a class="btn btn--primary" href="proyecto3.html">Más detalles</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
-                <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+                <a class="btn" href="proyecto3.html">Más detalles</a>
               </div>
             </div>
           </article>
@@ -96,7 +92,7 @@
 
   <footer>
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Tu Nombre.</p>
+      <p>© <span id="year"></span> Jesus Matarrita.</p>
       <a href="#" id="toTop" class="to-top" aria-label="Volver arriba">↑</a>
     </div>
   </footer>

@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <title>Tienda Online | Detalles</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta name="description" content="Detalles del proyecto Tienda Online: imagen y descripción del e-commerce." />
+  <meta property="og:title" content="Tienda Online | Detalles" />
+  <meta property="og:description" content="E-commerce con filtros, ordenamiento y carrito persistente." />
+  <meta property="og:image" content="assets/proyecto1.jpg" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
   <header>
     <div class="container header__inner">
-      <a class="logo" href="index.html">TN</a>
-      <nav class="nav" id="nav">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">TN</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html#inicio">Inicio</a></li>
           <li><a href="portfolio.html">Portafolio</a></li>
@@ -30,29 +38,25 @@
           <h1>Tienda Online (Front-End)</h1>
           <p class="muted">Rol: Front-End · Tiempo: 2–4 semanas · Stack: HTML, CSS (Grid/Flex), JS</p>
           <p>
-            Tienda web con catálogo filtrable (categoría, precio y búsqueda), carrito de compras con
-            persistencia en <em>localStorage</em>, y maquetación semántica accesible. El foco estuvo en
-            la experiencia de usuario: navegación clara, tarjetas de producto con “añadir al carrito”,
-            y feedback visual en acciones. La interfaz es responsiva usando CSS Grid y Flexbox, con
-            <em>lazy loading</em> de imágenes para optimizar rendimiento. Se alcanzó un puntaje superior
-            a 90 en Lighthouse (Performance/Best Practices/SEO).
+            Tienda web con catálogo filtrable (categoría, precio y búsqueda), ordenamiento y carrito de compras con
+            persistencia en <em>localStorage</em>. La interfaz es responsiva usando Grid y Flex, con atención a la
+            accesibilidad mediante semántica y roles ARIA. Se optimizó el rendimiento con <em>lazy loading</em> de
+            imágenes y un layout claro para mejorar la navegación.
           </p>
           <ul>
             <li>Catálogo con filtros dinámicos y ordenamiento.</li>
             <li>Carrito persistente y resumen de compra.</li>
-            <li>Diseño responsive y accesible (etiquetas ARIA, semántica).</li>
+            <li>Diseño responsive y accesible (semántica/ARIA).</li>
           </ul>
 
           <div class="cta" style="margin-top:16px;">
-            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver demo</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
             <a class="btn" href="portfolio.html">← Volver</a>
           </div>
         </div>
+
+        <!-- Solo imagen -->
         <aside class="card">
-          <img src="assets/proyecto1.jpg" alt="Captura Tienda Online">
-          <!-- (Opcional) Reemplaza por un iframe de video si tienes demo en YouTube -->
-          <!-- <iframe width="100%" height="280" src="https://www.youtube.com/embed/ID" title="Demo Tienda" allowfullscreen></iframe> -->
+          <img src="assets/proyecto1.jpg" alt="Vista Tienda Online (captura de pantalla)">
         </aside>
       </div>
     </section>

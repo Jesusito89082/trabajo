@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <title>Dashboard | Detalles</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta name="description" content="Detalles del proyecto Dashboard: imagen y descripción del panel de métricas." />
+  <meta property="og:title" content="Dashboard | Detalles" />
+  <meta property="og:description" content="Panel con KPIs, filtros y diseño responsive accesible." />
+  <meta property="og:image" content="assets/proyecto3.jpg" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
   <header>
     <div class="container header__inner">
-      <a class="logo" href="index.html">TN</a>
-      <nav class="nav" id="nav">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">TN</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html#inicio">Inicio</a></li>
           <li><a href="portfolio.html">Portafolio</a></li>
@@ -30,27 +38,24 @@
           <h1>Dashboard de Métricas</h1>
           <p class="muted">Rol: Full-Stack · Tiempo: 2–3 semanas · Stack: HTML, CSS, JS (fetch)</p>
           <p>
-            Panel para visualizar KPIs (ventas, usuarios, conversión) con filtros por fecha y
-            actualización dinámica de tarjetas y gráficas. Se optimizó la carga con <em>lazy loading</em>
-            y se priorizó accesibilidad (contraste, foco visible, roles ARIA). El diseño responsivo
-            permite usarlo en escritorio y móvil. Estructura pensada para integrar fuentes de datos vía
-            <code>fetch</code> o APIs existentes.
+            Panel para visualizar KPIs (ventas, usuarios, conversión) con filtros por fecha y actualización dinámica
+            de tarjetas y gráficas. Se prioriza accesibilidad (contraste, foco visible) y diseño responsive. La
+            estructura está lista para integrar fuentes de datos reales vía <code>fetch</code> o APIs existentes.
           </p>
           <ul>
-            <li>KPIs con cambio en tiempo real (simulado / API).</li>
+            <li>KPIs con actualización (simulada o por API).</li>
             <li>Filtros por rango de fecha y búsqueda.</li>
             <li>Animaciones sutiles y diseño responsive.</li>
           </ul>
 
           <div class="cta" style="margin-top:16px;">
-            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver demo</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
             <a class="btn" href="portfolio.html">← Volver</a>
           </div>
         </div>
+
+        <!-- Solo imagen -->
         <aside class="card">
-          <img src="assets/proyecto3.jpg" alt="Captura Dashboard de métricas">
-          <!-- (Opcional) inserta un gráfico con una imagen o librería si tu profe lo pide -->
+          <img src="assets/proyecto3.jpg" alt="Vista Dashboard de métricas (captura)">
         </aside>
       </div>
     </section>

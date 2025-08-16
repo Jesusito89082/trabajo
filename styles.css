@@ -9,7 +9,10 @@
   --shadow: 0 8px 20px rgba(0,0,0,.06);
 }
 
-html[data-theme="dark"] {
+/* Dark theme robusto: funciona si data-theme está en :root, html o body */
+:root[data-theme="dark"],
+html[data-theme="dark"],
+body[data-theme="dark"] {
   --bg: #0b0e14;
   --text: #e6e6e6;
   --muted: #9aa2b1;
@@ -20,7 +23,7 @@ html[data-theme="dark"] {
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body { height: 100%; transition: background-color .2s ease, color .2s ease; }
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";

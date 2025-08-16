@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <title>API REST | Detalles</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta name="description" content="Detalles del proyecto API REST: imagen y descripción de endpoints y autenticación." />
+  <meta property="og:title" content="API REST | Detalles" />
+  <meta property="og:description" content="CRUD, validación y autenticación; documentación Swagger/OpenAPI." />
+  <meta property="og:image" content="assets/proyecto2.jpg" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
   <header>
     <div class="container header__inner">
-      <a class="logo" href="index.html">TN</a>
-      <nav class="nav" id="nav">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">TN</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html#inicio">Inicio</a></li>
           <li><a href="portfolio.html">Portafolio</a></li>
@@ -30,11 +38,10 @@
           <h1>API REST de Productos y Pedidos</h1>
           <p class="muted">Rol: Back-End · Tiempo: 2–3 semanas · Stack: Node.js, Express, MongoDB/SQL</p>
           <p>
-            API REST para gestionar productos, usuarios y pedidos, con endpoints CRUD, validación de
-            datos y autenticación (básica/JWT). Incluye paginación, filtros y documentación técnica
-            (OpenAPI/Swagger) para facilitar la integración. Se aplicaron middlewares para manejo de
-            errores y protección de rutas, además de pruebas con Postman. La arquitectura prioriza la
-            mantenibilidad y separación por capas (rutas, controladores, servicios, modelos).
+            API REST con endpoints CRUD para productos/usuarios/pedidos, validación de datos y autenticación
+            (básica o JWT). Incluye paginación, filtros y documentación técnica (OpenAPI/Swagger) para facilitar
+            la integración con front-ends u otros servicios. Arquitectura por capas para mejorar mantenibilidad:
+            rutas, controladores, servicios y modelos.
           </p>
           <ul>
             <li>CRUD de productos y pedidos con validaciones.</li>
@@ -43,15 +50,13 @@
           </ul>
 
           <div class="cta" style="margin-top:16px;">
-            <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Ver documentación</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
             <a class="btn" href="portfolio.html">← Volver</a>
           </div>
         </div>
+
+        <!-- Solo imagen -->
         <aside class="card">
-          <img src="assets/proyecto2.jpg" alt="Esquema API REST">
-          <!-- (Opcional) tabla o snippet con endpoints -->
-          <!-- <pre class="card"><code>GET /api/products?page=1&limit=10</code></pre> -->
+          <img src="assets/proyecto2.jpg" alt="Vista API REST (diagrama/endpoints)">
         </aside>
       </div>
     </section>
